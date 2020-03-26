@@ -37,10 +37,18 @@ XML stands for "Extensible Markup Language" and is a markup language for encodin
 Write the usage of an XML file with an example. For instance, Travis and the file for building the project
 
 #### Webhooks
-Write the usage of Webhooks with an example. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) you need to add their webwook to your account.
+According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. An example of a typical event that triggers a webhook is when someone is pushing code to a repository.[[3]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[4]](https://sendgrid.com/blog/whats-webhook/)
+
+Add a tutorial for Webhooks. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) you need to add their webwook to your account.
 
 ### References 
 
 [1] https://www.tutorialspoint.com/yaml/index.htm 
 
 [2] https://en.wikipedia.org/wiki/XML
+
+[3] https://en.wikipedia.org/wiki/Webhook
+
+[4] https://sendgrid.com/blog/whats-webhook/
+
+
