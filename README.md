@@ -6,7 +6,7 @@ A repository created by @johannaii and @louisezetterlund for testing and install
 
 # Tutorial for installing an Github App or Action
 
-### Background and Benefits/Usage with Github Apps and Actions
+## Background and Benefits/Usage with Github Apps and Actions
 Some background why someone would want to use an App or Action.
 
 #### Difference between a Github App and an Github Action
@@ -17,29 +17,35 @@ An Github App can make an action on its own, by using the Github's API. For inst
 An Github Action is ....
 
 
-### How to install an Github App or Action
+## How to install an Github App or Action
 
-#### Github Marketplace
+### Github Marketplace
 First of all, you need to visit the marketplace of Github Apps. 
 Here is the link to the marketplace: [Github Marketplace](https://github.com/marketplace)
 
 In the Github marketplace, you will find a lot of different tools that you can install and integrate to your repository at Github. Some of the tools are also integrating with other external tools such as
 [Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). 
 
-#### Yaml file 
-YAML stands for "YAMl Ain't Markup Language" and is a programming language that works well with other programming language and data serialization.[[1]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation. When it comes to Github Apps an Actions, yaml files are mostly used for configurate the app or the action. 
+ADD A PICTURE OF GITHUB MARKETPLACE + ONE EXAMPLE OF AN APP/ACTION IN THE MARKETPLACE
 
+### YAML file 
+YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language and for data serialization.[[1]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation with spaces. [[5]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often used in applications where data is being stored or transmitted, but also for configuration files. [[6]](https://en.wikipedia.org/wiki/YAML) When it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
+
+#### How to install app/action **** by using a YAML file
 Two actions where you need to add information to an yaml file are [Mjolnir](https://github.com/marketplace/actions/closes-issues-related-to-a-merged-pull-request) and [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2).
 
-#### XML file
-XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. [[2]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ".
+### XML file
+XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. [[2]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". XML provides to access information and make it easier for application use, store, display and transmit data. [[7]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. [[8]](https://www.tutorialspoint.com/maven/maven_pom.htm)
 
-Write the usage of an XML file with an example. For instance, Travis and the file for building the project
+#### How to install the app Travis by using a XML file
+Add a tutorial for Travis
 
-#### Webhooks
+### Webhooks
 According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. An example of a typical event that triggers a webhook is when someone is pushing code to a repository.[[3]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[4]](https://sendgrid.com/blog/whats-webhook/)
 
+#### How to install the action Discord Notification by using Webhooks
 Add a tutorial for Webhooks. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) you need to add their webwook to your account.
+
 
 ### References 
 
@@ -50,5 +56,13 @@ Add a tutorial for Webhooks. For instance, the [Discord Notification](https://gi
 [3] https://en.wikipedia.org/wiki/Webhook
 
 [4] https://sendgrid.com/blog/whats-webhook/
+
+[5] https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes
+
+[6] https://en.wikipedia.org/wiki/YAML
+
+[7] https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm
+
+[8] https://www.tutorialspoint.com/maven/maven_pom.htm
 
 
