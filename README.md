@@ -15,6 +15,12 @@ provide continuous delivery [[1.0]](https://en.wikipedia.org/wiki/DevOps). DevOp
 smooth between the different parts of the project (such as backend, frontend) and make the team work more efficient and 
 homogeneous. 
 
+In order to have a smooth team work and a way to roll-back eventual unstable versions, there must be a version control system
+such as GitHub. By using GitHub, there is a possibility to use tools to automate different processes of the DevOps workflow
+like the build process and the test process. This is possible to do using tools built into GitHub, the version control system.
+These tools are helping developers to make the flow more efficient, since it is happening automatically and the developers 
+can focus on actually writing code [[1.1]](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/).
+ 
 #### Difference between a Github App and an Github Action
 Both Github Apps and Github Actions provide ways to build tools that are useful for the toolchain in DevOps. However, they have some differences that might be necessary to take into consideration when you use or develop one.
 
@@ -56,6 +62,8 @@ Add a tutorial for Webhooks. For instance, the [Discord Notification](https://gi
 ### References 
 
 [1.0] https://en.wikipedia.org/wiki/DevOps
+
+[1.1] https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/
 
 [1] https://www.tutorialspoint.com/yaml/index.htm 
 
