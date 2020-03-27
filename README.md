@@ -7,7 +7,13 @@ A repository created by @johannaii and @louisezetterlund for testing and install
 # Tutorial for installing an Github App or Action
 
 ## Background and Benefits/Usage with Github Apps and Actions
-Some background why someone would want to use an App or Action.
+There are a few buzz words in the tech business and two of them are 'agile' and 'DevOps'. Just as the agile way
+of working is used to minimize misunderstandings between the customer and the company, DevOps is used to make
+sure the development of a service is efficient and contains as few errors as possible. Just like agile principles are 
+that you are working in short sprints and deliver often, DevOps principles is to shorten the development cycle and
+provide continuous delivery [[1.0]](https://en.wikipedia.org/wiki/DevOps). DevOps is also used to make the cycle more 
+smooth between the different parts of the project (such as backend, frontend) and make the team work more efficient and 
+homogeneous. 
 
 #### Difference between a Github App and an Github Action
 Both Github Apps and Github Actions provide ways to build tools that are useful for the toolchain in DevOps. However, they have some differences that might be necessary to take into consideration when you use or develop one.
@@ -48,6 +54,8 @@ Add a tutorial for Webhooks. For instance, the [Discord Notification](https://gi
 
 
 ### References 
+
+[1.0] https://en.wikipedia.org/wiki/DevOps
 
 [1] https://www.tutorialspoint.com/yaml/index.htm 
 
