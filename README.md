@@ -11,7 +11,7 @@ There are a few buzz words in the tech business and two of them are 'agile' and 
 of working is used to minimize misunderstandings between the customer and the company, DevOps is used to make
 sure the development of a service is efficient and contains as few errors as possible. Just like agile principles are 
 that you are working in short sprints and deliver often, DevOps principles is to shorten the development cycle and
-provide continuous delivery [[1.0]](https://en.wikipedia.org/wiki/DevOps). DevOps is also used to make the cycle more 
+provide continuous delivery [[1]](https://en.wikipedia.org/wiki/DevOps). DevOps is also used to make the cycle more 
 smooth between the different parts of the project (such as backend, frontend) and make the team work more efficient and 
 homogeneous. 
 
@@ -19,14 +19,15 @@ In order to have a smooth team work and a way to roll-back eventual unstable ver
 such as GitHub. By using GitHub, there is a possibility to use tools to automate different processes of the DevOps workflow
 like the build process and the test process. This is possible to do using tools built into GitHub, the version control system.
 These tools are helping developers to make the flow more efficient, since it is happening automatically and the developers 
-can focus on actually writing code [[1.1]](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/).
+can focus on actually writing code [[2]](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/).
  
 #### Difference between a Github App and an Github Action
 Both Github Apps and Github Actions provide ways to build tools that are useful for the toolchain in DevOps. However, they have some differences that might be necessary to take into consideration when you use or develop one.
 
 An Github App can make an action on its own, by using the Github's API. For instance, the CI tool [Travis](https://travis-ci.com/) is testing and deploying a project by itself whenever someone make a commit to the repository.
 
-An Github Action is ....
+An Github Action is a less complicated version of GitHub Apps, since it can run directly on runner machines or in 
+Doctrine containers and you don't need to deploy any code or serve an app in order to use it [[3]](https://help.github.com/en/actions/building-actions/about-actions#comparing-github-actions-to-github-apps).
 
 
 ## How to install an Github App or Action
@@ -41,19 +42,19 @@ In the Github marketplace, you will find a lot of different tools that you can i
 ADD A PICTURE OF GITHUB MARKETPLACE + ONE EXAMPLE OF AN APP/ACTION IN THE MARKETPLACE
 
 ### YAML file 
-YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language and for data serialization.[[1]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation with spaces. [[5]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often used in applications where data is being stored or transmitted, but also for configuration files. [[6]](https://en.wikipedia.org/wiki/YAML) When it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
+YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
 
 #### How to install app/action **** by using a YAML file
 Two actions where you need to add information to an yaml file are [Mjolnir](https://github.com/marketplace/actions/closes-issues-related-to-a-merged-pull-request) and [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2).
 
 ### XML file
-XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. [[2]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". XML provides to access information and make it easier for application use, store, display and transmit data. [[7]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. [[8]](https://www.tutorialspoint.com/maven/maven_pom.htm)
+XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. [[5]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". XML provides to access information and make it easier for application use, store, display and transmit data. [[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. [[11]](https://www.tutorialspoint.com/maven/maven_pom.htm)
 
 #### How to install the app Travis by using a XML file
 Add a tutorial for Travis
 
 ### Webhooks
-According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. An example of a typical event that triggers a webhook is when someone is pushing code to a repository.[[3]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[4]](https://sendgrid.com/blog/whats-webhook/)
+According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. An example of a typical event that triggers a webhook is when someone is pushing code to a repository.[[6]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[7]](https://sendgrid.com/blog/whats-webhook/)
 
 #### How to install the action Discord Notification by using Webhooks
 Add a tutorial for Webhooks. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) you need to add their webwook to your account.
@@ -61,24 +62,26 @@ Add a tutorial for Webhooks. For instance, the [Discord Notification](https://gi
 
 ### References 
 
-[1.0] https://en.wikipedia.org/wiki/DevOps
+[1] https://en.wikipedia.org/wiki/DevOps
 
-[1.1] https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/
+[2] https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/
 
-[1] https://www.tutorialspoint.com/yaml/index.htm 
+[3] https://help.github.com/en/actions/building-actions/about-actions#comparing-github-actions-to-github-apps
 
-[2] https://en.wikipedia.org/wiki/XML
+[4] https://www.tutorialspoint.com/yaml/index.htm 
 
-[3] https://en.wikipedia.org/wiki/Webhook
+[5] https://en.wikipedia.org/wiki/XML
 
-[4] https://sendgrid.com/blog/whats-webhook/
+[6] https://en.wikipedia.org/wiki/Webhook
 
-[5] https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes
+[7] https://sendgrid.com/blog/whats-webhook/
 
-[6] https://en.wikipedia.org/wiki/YAML
+[8] https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes
 
-[7] https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm
+[9] https://en.wikipedia.org/wiki/YAML
 
-[8] https://www.tutorialspoint.com/maven/maven_pom.htm
+[10] https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm
+
+[11] https://www.tutorialspoint.com/maven/maven_pom.htm
 
 
