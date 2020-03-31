@@ -59,6 +59,13 @@ After clicking on the "Install it for free"-button, you will be re-directed to a
 
 You will be able to choose if you want the app to be installed on all repositories or only selected ones. You will also need to confirm your choice with your Github password.
 
+After you have installed the "Slack + Github" app for one of your repository, you need to go to your Slack account and install the Github application there too. You will find the application in the "Apps" section in the sidebar. Click on the "Add" button, and then you will be re-directed to Slack's tutorial on how to install the Github app in one of your workspaces.
+
+![](/images/slack_apps_view.png)
+
+![](/images/slack_guide_github.png)
+
+
 ### YAML file 
 YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
 
