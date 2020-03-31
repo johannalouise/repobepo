@@ -1,9 +1,3 @@
-# RepoBepo
-
-A repository created by @johannaii and @louisezetterlund for testing and installing different Github Apps and Actions that are available on the Github marketplace. 
-
----
-
 # Tutorial for installing an Github App or Action
 
 ## Background and Benefits/Usage with Github Apps and Actions
