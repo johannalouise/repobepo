@@ -43,6 +43,22 @@ In the Github marketplace, you will find a lot of different tools that you can i
 
 #### How to install the app [Slack + Github](https://github.com/marketplace/slack-github)
 
+##### Prerequisites
+* A Slack account
+* A workspace in Slack
+
+If you do not have a Slack account or workspace, please follow the guide on Slacks own [website](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwif55LKy8ToAhUX5ZoKHX45Bx8YABAAGgJsbQ&ohost=www.google.com&cid=CAASEuRortX0GkgC4HvQYVOza5oKqA&sig=AOD64_0PQM7w4K-o45aoLOP1dIHoHc2pcg&q=&ved=2ahUKEwjU_IzKy8ToAhVLY5oKHTusCCYQ0Qx6BAgaEAE&adurl=) before you continue with this tutorial.
+
+Firstly, you need to click on the button "Set up a plan", then you will be re-directed to the bottom of the page where you will see a green button with the text "Install it for free". 
+
+![](/images/github_marketplace_slack.png)
+
+After clicking on the "Install it for free"-button, you will be re-directed to another page where you need to review your order and begin the installation by clicking on the button "Complete order and begin installation".
+
+![](/images/slack_review_order.png)
+
+You will be able to choose if you want the app to be installed on all repositories or only selected ones. You will also need to confirm your choice with your Github password.
+
 ### YAML file 
 YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
 
