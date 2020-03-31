@@ -29,17 +29,25 @@ An Github App can make an action on its own, by using the Github's API. For inst
 An Github Action is a less complicated version of GitHub Apps, since it can run directly on runner machines or in 
 Doctrine containers and you don't need to deploy any code or serve an app in order to use it [[3]](https://help.github.com/en/actions/building-actions/about-actions#comparing-github-actions-to-github-apps).
 
-
 ## How to install an Github App or Action
+
+### Prerequisites
+To be able to install an Github app or action you will need the following:
+* A Github account
+* A Github repository
+
+If you do not have a Github account or repository yet, please follow [Github's guide](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) before continue this one.
 
 ### Github Marketplace
 First of all, you need to visit the marketplace of Github Apps. 
-Here is the link to the marketplace: [Github Marketplace](https://github.com/marketplace)
+Here is a link to the current available apps and actions in the marketplace: [Github Marketplace](https://github.com/marketplace)
+
+![](/images/github_marketplace_apps_actions.png)
 
 In the Github marketplace, you will find a lot of different tools that you can install and integrate to your repository at Github. Some of the tools are also integrating with other external tools such as
-[Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). 
+[Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). To demonstrate how to install an app or action from the marketplace, we will use the app [Slack + Github](https://github.com/marketplace/slack-github).
 
-ADD A PICTURE OF GITHUB MARKETPLACE + ONE EXAMPLE OF AN APP/ACTION IN THE MARKETPLACE
+#### How to install the app [Slack + Github](https://github.com/marketplace/slack-github)
 
 ### YAML file 
 YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
