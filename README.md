@@ -57,14 +57,25 @@ After clicking on the "Install it for free"-button, you will be re-directed to a
 
 ![](/images/slack_review_order.png)
 
-You will be able to choose if you want the app to be installed on all repositories or only selected ones. You will also need to confirm your choice with your Github password.
+You will be able to choose if you want the app to be installed on all repositories or only selected ones, and confirm you choice with your password.
 
 After you have installed the "Slack + Github" app for one of your repository, you need to go to your Slack account and install the Github application there too. You will find the application in the "Apps" section in the sidebar. Click on the "Add" button, and then you will be re-directed to Slack's tutorial on how to install the Github app in one of your workspaces.
 
 ![](/images/slack_apps_view.png)
 
+In Slack's guide, you will receive information on how to subscribe specific repositories to a workspace and a channel, but also how to take action in the Slack application. After you have read through Slack's guide on how you use their Github application, you click on the "Add to Slack" button.
+
 ![](/images/slack_guide_github.png)
 
+You will be able to decide which channels the Github application will have access to. After you have decided that, you click on the "Install" button at the bottom of the page. Shortly after you have clicked on the button, you will be re-directed to the workspace in Slack that you have chosen for the installation. After a few minutes, you should have received a direct message from the Github application in you Slack workspace telling you that you have successfully installed GitHub on this Slack workspace.
+
+![](/images/successfully_installed_slack_app.png)
+
+Now you have successfully installed the Github application in your Slack workspace. However, you will need to subscribe to you repository and connect your Github account to the workspace. 
+
+First of all, you will need to write the command /github subscribe owner/repository, where owner is the owner's Github username and repository is the URL to the repository you want to connect to Slack. After you have done that, you will receive a new direct message from the Github app with a confirmation link where you need to log in to you github account to finish the installation. 
+
+Now you are all set up and have connected your Github repository to your Slack workspace! If you want to know how you customize your Github notifications in Slack, please follow this [link](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) to Slack's own guide.
 
 ### YAML file 
 YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
