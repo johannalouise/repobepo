@@ -1,6 +1,33 @@
-# Tutorial for installing an Github App or Action
+# Tutorial for installing an GitHub App or Action
 
-## Background and Benefits/Usage with Github Apps and Actions
+## Table of contents
+1. [Background and benefits of GitHub Apps and Actions](#back)
+2. [Difference between GitHub Apps and Actions](#diff)
+3. [How to install a GitHub App or Action]("how)
+
+    3.1 [Prerequisites](#pre)
+    
+    3.2 [GitHub market](#market)
+    
+    3.2.1 [How to install the app Slack + Github](#slack)
+    
+    3.3 [YAML](#yaml)
+    
+    3.3.1 [How to install GitHub Action Mjolnir using YAML](#mjolnir)
+    
+    3.4 [XML](#xml)
+    
+    3.4.1 [How to install the GitHub App Travis using XML](#travis)
+    
+    3.5 [Webhooks](#web)
+    
+    3.5.1 [How to install GitHub Action Discord using webhooks](#discord)
+    
+ 4. [References](#ref)
+
+<a name="back"> </a>
+
+## Background and Benefits/Usage with GitHub Apps and Actions
 There are a few buzz words in the tech business and two of them are 'agile' and 'DevOps'. Just as the agile way
 of working is used to minimize misunderstandings between the customer and the company, DevOps is used to make
 sure the development of a service is efficient and contains as few errors as possible. Just like agile principles are 
@@ -14,16 +41,22 @@ such as GitHub. By using GitHub, there is a possibility to use tools to automate
 like the build process and the test process. This is possible to do using tools built into GitHub, the version control system.
 These tools are helping developers to make the flow more efficient, since it is happening automatically and the developers 
 can focus on actually writing code [[2]](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/).
- 
-#### Difference between a Github App and an Github Action
-Both Github Apps and Github Actions provide ways to build tools that are useful for the toolchain in DevOps. However, they have some differences that might be necessary to take into consideration when you use or develop one.
 
-An Github App can make an action on its own, by using the Github's API. For instance, the CI tool [Travis](https://travis-ci.com/) is testing and deploying a project by itself whenever someone make a commit to the repository.
+<a name="diff"> </a>
 
-An Github Action is a less complicated version of GitHub Apps, since it can run directly on runner machines or in 
+#### Difference between a GitHub App and an GitHub Action
+Both GitHub Apps and GitHub Actions provide ways to build tools that are useful for the toolchain in DevOps. However, they have some differences that might be necessary to take into consideration when you use or develop one.
+
+An GitHub App can make an action on its own, by using the GitHub's API. For instance, the CI tool [Travis](https://travis-ci.com/) is testing and deploying a project by itself whenever someone make a commit to the repository.
+
+An GitHub Action is a less complicated version of GitHub Apps, since it can run directly on runner machines or in 
 Doctrine containers and you don't need to deploy any code or serve an app in order to use it [[3]](https://help.github.com/en/actions/building-actions/about-actions#comparing-github-actions-to-github-apps).
 
-## How to install an Github App or Action
+<a name="how"> </a>
+
+## How to install an GitHub App or Action
+
+<a name="pre"> </a>
 
 ### Prerequisites
 To be able to install an Github app or action you will need the following:
@@ -31,6 +64,8 @@ To be able to install an Github app or action you will need the following:
 * A Github repository
 
 If you do not have a Github account or repository yet, please follow [Github's guide](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) before continue this one.
+
+<a name="market"> </a>
 
 ### Github Marketplace
 First of all, you need to visit the marketplace of Github Apps. 
@@ -40,6 +75,8 @@ Here is a link to the current available apps and actions in the marketplace: [Gi
 
 In the Github marketplace, you will find a lot of different tools that you can install and integrate to your repository at Github. Some of the tools are also integrating with other external tools such as
 [Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). To demonstrate how to install an app or action from the marketplace, we will use the app [Slack + Github](https://github.com/marketplace/slack-github).
+
+<a name="slack"> </a>
 
 #### How to install the app [Slack + Github](https://github.com/marketplace/slack-github)
 
@@ -95,6 +132,9 @@ to finish the installation.
 Now you are all set up and have connected your Github repository to your Slack workspace! If you want to know how you 
 customize your Github notifications in Slack, please follow this [link](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) 
 to Slack's own guide.
+
+<a name="yaml"> </a>
+
 ### YAML file 
 YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language 
 and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses 
@@ -102,7 +142,9 @@ indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Lear
 used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When 
 it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
 
-#### How to install action Mjolnir by using a YAML file
+<a name="mjolnir"> </a>
+
+#### How to install GitHub Action Mjolnir by using a YAML file
  [Mjolnir](https://github.com/marketplace/actions/closes-issues-related-to-a-merged-pull-request) is a GitHub Action that
  automatically closes multiple issues related to a pull request.
 
@@ -121,18 +163,27 @@ directory called "workflows" in a directory called ".github".
 
 And this is enough for you to use this action in your GitHub.
 
+<a name="xml"> </a>
+
 ### XML file
 XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. [[5]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". XML provides to access information and make it easier for application use, store, display and transmit data. [[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. [[11]](https://www.tutorialspoint.com/maven/maven_pom.htm)
 
-#### How to install the app Travis by using a XML file
+<a name="travis"> </a>
+
+#### How to install GitHub App Travis by using a XML file
 Add a tutorial for Travis
+
+<a name="web"> </a>
 
 ### Webhooks
 According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. An example of a typical event that triggers a webhook is when someone is pushing code to a repository.[[6]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[7]](https://sendgrid.com/blog/whats-webhook/)
 
-#### How to install the action Discord Notification by using Webhooks
+<a name="discord"> </a>
+
+#### How to install GitHub Action Discord Notification by using Webhooks
 Add a tutorial for Webhooks. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) you need to add their webwook to your account.
 
+<a name="ref"> </a>
 
 ### References 
 
