@@ -10,19 +10,19 @@
     
     2.2 [GitHub market](#market)
     
-        2.2.1 [How to install the app Slack + Github](#slack)
+    2.2.1 [How to install the app Slack + Github](#slack)
     
     2.3 [YAML](#yaml)
     
-        2.3.1 [How to install GitHub Action Mjolnir using YAML](#mjolnir)
+    2.3.1 [How to install GitHub Action Mjolnir using YAML](#mjolnir)
     
     2.4 [XML](#xml)
     
-        2.4.1 [How to install the GitHub App Travis using XML](#travis)
+    2.4.1 [How to install the GitHub App Travis using XML](#travis)
     
     2.5 [Webhooks](#web)
     
-        2.5.1 [How to install GitHub Action Discord using webhooks](#discord)
+    2.5.1 [How to install GitHub Action Discord using webhooks](#discord)
     
 [References](#ref)
 
