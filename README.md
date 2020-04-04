@@ -2,28 +2,29 @@
 
 ## Table of contents
 1. [Background and benefits of GitHub Apps and Actions](#back)
-2. [Difference between GitHub Apps and Actions](#diff)
-3. [How to install a GitHub App or Action]("how)
 
-    3.1 [Prerequisites](#pre)
+    1.1. [Difference between GitHub Apps and Actions](#diff)
+2. [How to install a GitHub App or Action]("how)
+
+    2.1 [Prerequisites](#pre)
     
-    3.2 [GitHub market](#market)
+    2.2 [GitHub market](#market)
     
-    3.2.1 [How to install the app Slack + Github](#slack)
+        2.2.1 [How to install the app Slack + Github](#slack)
     
-    3.3 [YAML](#yaml)
+    2.3 [YAML](#yaml)
     
-    3.3.1 [How to install GitHub Action Mjolnir using YAML](#mjolnir)
+        2.3.1 [How to install GitHub Action Mjolnir using YAML](#mjolnir)
     
-    3.4 [XML](#xml)
+    2.4 [XML](#xml)
     
-    3.4.1 [How to install the GitHub App Travis using XML](#travis)
+        2.4.1 [How to install the GitHub App Travis using XML](#travis)
     
-    3.5 [Webhooks](#web)
+    2.5 [Webhooks](#web)
     
-    3.5.1 [How to install GitHub Action Discord using webhooks](#discord)
+        2.5.1 [How to install GitHub Action Discord using webhooks](#discord)
     
- 4. [References](#ref)
+[References](#ref)
 
 <a name="back"> </a>
 
