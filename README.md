@@ -153,7 +153,7 @@ You can find Mjolnir when searching GitHub Marketplace.
 
 ![](/images/mjolnir-site.png)
 
-Press the button "Use the latest version". This will show you following page:
+Press the button 'Use the latest version'. This will show you following page:
 
 ![](/images/mjolnir-yml.png)
 
@@ -167,22 +167,41 @@ And this is enough for you to use this action in your GitHub.
 <a name="xml"> </a>
 
 ### XML file
-XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. [[5]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". XML provides to access information and make it easier for application use, store, display and transmit data. [[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. [[11]](https://www.tutorialspoint.com/maven/maven_pom.htm)
+XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. 
+[[5]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". 
+XML provides to access information and make it easier for application use, store, display and transmit data. 
+[[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, 
+XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. 
+[[11]](https://www.tutorialspoint.com/maven/maven_pom.htm)
 
 <a name="travis"> </a>
 
-#### How to install GitHub App Travis by using a XML file
-Add a tutorial for Travis
+#### How to install GitHub app Travis by using a XML file
+To install Travis, you'll first need to visit their [webpage](http://travis-ci.org/). Choose 'Sign in', and you will be
+redirected to sign in using you GitHub-account. 
+
+![](/images/travis-signin.png) 
+
+After 'Sign in' you need to give Travis access to your repositories. This doesn't mean that it will affect your repositories
+before you actually add the files, so don't worry if it lists a repository that you're not in charge of.
+
+![](/images/travis1.png) 
+
+![](/images/travis2.png) 
 
 <a name="web"> </a>
 
 ### Webhooks
-According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. An example of a typical event that triggers a webhook is when someone is pushing code to a repository.[[6]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[7]](https://sendgrid.com/blog/whats-webhook/)
+According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. 
+An example of a typical event that triggers a webhook is when someone is pushing code to a repository.
+[[6]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as 
+the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[7]](https://sendgrid.com/blog/whats-webhook/)
 
 <a name="discord"> </a>
 
 #### How to install GitHub Action Discord Notification by using Webhooks
-Add a tutorial for Webhooks. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) you need to add their webwook to your account.
+Add a tutorial for Webhooks. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) 
+you need to add their webwook to your account.
 
 <a name="ref"> </a>
 
