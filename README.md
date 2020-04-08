@@ -145,24 +145,23 @@ it comes to Github Apps an Actions, YAML files are often used for configurate th
 
 <a name="mjolnir"> </a>
 
-#### How to install GitHub Action Mjolnir by using a YAML file
- [Mjolnir](https://github.com/marketplace/actions/closes-issues-related-to-a-merged-pull-request) is a GitHub Action that
- automatically closes multiple issues related to a pull request.
+#### How to install GitHub Action  by using a YAML file
+ [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) is a GitHub Action that
+ automatically checks your markdown files and warns you if it finds any broken links.
 
-You can find Mjolnir when searching GitHub Marketplace.
+You can find the action when searching GitHub Marketplace.
 
-![](/images/mjolnir-site.png)
+![](/images/action-marketplace.png)
 
-Press the button 'Use the latest version'. This will show you following page:
-
-![](/images/mjolnir-yml.png)
+In the documentation of the action is tells you what to copy on order to use it. 
 
 This text is yaml-code that you need to copy and paste into a .yml-fil in your repository. This file should be in a 
 directory called "workflows" in a directory called ".github".
 
-![](/images/yml-intellij.png) 
+![](/images/intellij-yml.png) 
 
-And this is enough for you to use this action in your GitHub.
+And this is enough for you to use this action in your GitHub. If you want to use another action, all you
+have to do is to copy its yaml-code to the same .yml-file. It's super easy!
 
 <a name="xml"> </a>
 
