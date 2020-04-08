@@ -14,11 +14,11 @@
     
     2.3 [YAML](#yaml)
     
-    2.3.1 [How to install GitHub Action Mjolnir using YAML](#mjolnir)
+    2.3.1 [How to install GitHub Action using YAML](#action)
     
     2.4 [XML](#xml)
     
-    2.4.1 [How to install the GitHub App Travis using XML](#travis)
+    2.4.1 [How to install the GitHub App Travis on a Maven project using XML](#travis)
     
     2.5 [Webhooks](#web)
     
@@ -143,7 +143,7 @@ indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Lear
 used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When 
 it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
 
-<a name="mjolnir"> </a>
+<a name="action"> </a>
 
 #### How to install GitHub Action  by using a YAML file
  [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) is a GitHub Action that
@@ -175,7 +175,7 @@ XML files are often used for building a POM (Project Object Model) unit which is
 
 <a name="travis"> </a>
 
-#### How to install GitHub app Travis by using a XML file
+#### How to install GitHub app Travis on a Maven project by using a XML file
 To install Travis, you'll first need to visit their [webpage](http://travis-ci.org/). Choose 'Sign in', and you will be
 redirected to sign in using you GitHub-account. 
 
@@ -185,8 +185,28 @@ After 'Sign in' you need to give Travis access to your repositories. This doesn'
 before you actually add the files, so don't worry if it lists a repository that you're not in charge of.
 
 ![](/images/travis1.png) 
-
 ![](/images/travis2.png) 
+
+After this you should add the repository you want to activate Travis on, by pressing +:
+
+![](/images/travis3.png) 
+
+and activate Travis on that repository bli "flicking the switch":
+
+![](/images/travis4.png) 
+
+and then finally activating the repository by pressing the button:
+
+![](/images/travis5.png) 
+
+The last part you need to do in order for making Travis run builds on your commits is to add a
+.travis.yml in the root of your project. This is in order to tell Travis what language you want
+it to build your project in. In our case, we added 
+
+            language: java
+as the only line in that .yml-file.
+
+Now on to the Maven-project and XML part. 
 
 <a name="web"> </a>
 
