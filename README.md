@@ -230,7 +230,7 @@ jobs:
 
 ```
 
-
+[![](/images/discord_youtube.png)](https://youtu.be/pBm-eHDz3Og)
 
 <a name="ref"> </a>
 
