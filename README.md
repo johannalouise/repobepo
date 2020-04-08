@@ -199,9 +199,38 @@ the event or action happens. This makes webhooks efficient both for the provider
 
 <a name="discord"> </a>
 
-#### How to install GitHub Action Discord Notification by using Webhooks
-Add a tutorial for Webhooks. For instance, the [Discord Notification](https://github.com/marketplace/actions/actions-for-discord?version=0.0.2) 
-you need to add their webwook to your account.
+#### How to install GitHub action Discord Message Notify by using Webhooks
+
+##### Prerequisites
+* A Discord account
+* A Discord server with a channel
+
+In this tutorial, we will show you how to install the Github action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify) in the video below. If you do not have a Discord account, please visit Discord's own [website](https://discordapp.com) and create one before continue with the video tutorial. 
+
+The lines for the discord.yml that we use in the video:
+
+```
+name: discord message
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: send custom message with args
+      uses: appleboy/discord-action@master
+      with:
+        webhook_id: ${{ secrets.WEBHOOK_ID }}
+        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        color: "#00FFB9"
+        username: "Cat Bot"
+        message: "A new commit has been pushed to johannalouise/repo."
+
+```
+
+
 
 <a name="ref"> </a>
 
