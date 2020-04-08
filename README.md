@@ -230,7 +230,9 @@ jobs:
 
 ```
 
-[![](https://img.youtube.com/vi/pBm-eHDz3Og/0.jpg)](https://youtu.be/pBm-eHDz3Og)
+Click on the video below to watch the video tutorial for Discord Message Notify.
+
+[![](./images/discord_tutorial.png)](https://youtu.be/pBm-eHDz3Og)
 
 <a name="ref"> </a>
 
