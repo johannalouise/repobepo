@@ -16,9 +16,9 @@
     
     2.3.1 [How to install GitHub Action using YAML](#action)
     
-    2.5 [Webhooks](#web)
+    2.4 [Webhooks](#web)
     
-    2.5.1 [How to install GitHub Action Discord using webhooks](#discord)
+    2.4.1 [How to install GitHub Action Discord using webhooks](#discord)
     
 [References](#ref)
 
@@ -56,32 +56,32 @@ Doctrine containers and you don't need to deploy any code or serve an app in ord
 <a name="pre"> </a>
 
 ### Prerequisites
-To be able to install an Github app or action you will need the following:
-* A Github account
-* A Github repository
+To be able to install an GitHub app or action you will need the following:
+* A GitHub account
+* A GitHub repository
 
-If you do not have a Github account or repository yet, please follow [Github's guide](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) before continue this one.
+If you do not have a GitHub account or repository yet, please follow [GitHub's guide](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) before continuing with this one.
 
 <a name="market"> </a>
 
-### Github Marketplace
-First of all, you need to visit the marketplace of Github Apps. 
-Here is a link to the current available apps and actions in the marketplace: [Github Marketplace](https://github.com/marketplace)
+### GitHub Marketplace
+First of all, you need to visit the marketplace of GitHub Apps. 
+Here is a link to the current available apps and actions in the marketplace: [GitHub Marketplace](https://github.com/marketplace)
 
 ![](/images/github_marketplace_apps_actions.png)
 
-In the Github marketplace, you will find a lot of different tools that you can install and integrate to your repository at Github. Some of the tools are also integrating with other external tools such as
-[Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). To demonstrate how to install an app or action from the marketplace, we will use the app [Slack + Github](https://github.com/marketplace/slack-github).
+In the GitHub marketplace, you will find a lot of different tools that you can install and integrate to your repository at GitHub. Some of the tools are also integrating with other external tools such as
+[Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). To demonstrate how to install an app or action from the marketplace, we will use the app [Slack + GitHub](https://github.com/marketplace/slack-github).
 
 <a name="slack"> </a>
 
-#### How to install the app [Slack + Github](https://github.com/marketplace/slack-github)
+#### How to install the app [Slack + GitHub](https://github.com/marketplace/slack-github)
 
 ##### Prerequisites
 * A Slack account
 * A workspace in Slack
 
-If you do not have a Slack account or workspace, please follow the guide on Slacks own 
+If you do not have a Slack account or workspace, please follow the guide on Slack's own 
 [website](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwif55LKy8ToAhUX5ZoKHX45Bx8YABAAGgJsbQ&ohost=www.google.com&cid=CAASEuRortX0GkgC4HvQYVOza5oKqA&sig=AOD64_0PQM7w4K-o45aoLOP1dIHoHc2pcg&q=&ved=2ahUKEwjU_IzKy8ToAhVLY5oKHTusCCYQ0Qx6BAgaEAE&adurl=) 
 before you continue with this tutorial.
 
@@ -95,39 +95,39 @@ order and begin the installation by clicking on the button "Complete order and b
 
 ![](/images/slack_review_order.png)
 
-You will be able to choose if you want the app to be installed on all repositories or only selected ones, and confirm you
+You will be able to choose if you want the app to be installed on all repositories or only selected ones, and confirm your
  choice with your password.
 
-After you have installed the "Slack + Github" app for one of your repository, you need to go to your Slack account and 
-install the Github application there too. You will find the application in the "Apps" section in the sidebar. Click on the 
-"Add" button, and then you will be re-directed to Slack's tutorial on how to install the Github app in one of your workspaces.
+After you have installed the "Slack + GitHub" app for one of your repository, you need to go to your Slack account and 
+install the GitHub application there too. You will find the application in the "Apps" section in the sidebar. Click on the 
+"Add"-button, and then you will be re-directed to Slack's tutorial on how to install the GitHub app in one of your workspaces.
 
 ![](/images/slack_apps_view.png)
 
 In Slack's guide, you will receive information on how to subscribe specific repositories to a workspace and a channel, 
 but also how to take action in the Slack application. After you have read through Slack's guide on how you use their 
-Github application, you click on the "Add to Slack" button.
+GitHub application, you click on the "Add to Slack"-button.
 
 ![](/images/slack_guide_github.png)
 
-You will be able to decide which channels the Github application will have access to. After you have decided that, you 
-click on the "Install" button at the bottom of the page. Shortly after you have clicked on the button, you will be 
+You will be able to decide which channels the GitHub application will have access to. After you have decided that, you 
+click on the "Install"-button at the bottom of the page. Shortly after you have clicked on the button, you will be 
 re-directed to the workspace in Slack that you have chosen for the installation. After a few minutes, you should have 
-received a direct message from the Github application in you Slack workspace telling you that you have successfully 
+received a direct message from the GitHub application in you Slack workspace telling you that you have successfully 
 installed GitHub on this Slack workspace.
 
 ![](/images/successfully_installed_slack_app.png)
 
-Now you have successfully installed the Github application in your Slack workspace. However, you will need to subscribe 
-to you repository and connect your Github account to the workspace. 
+Now you have successfully installed the GitHub application in your Slack workspace. However, you will need to subscribe 
+to you repository and connect your GitHub account to the workspace. 
 
-First of all, you will need to write the command /github subscribe owner/repository, where owner is the owner's Github 
+First of all, you will need to write the command /github subscribe owner/repository, where owner is the owner's GitHub 
 username and repository is the URL to the repository you want to connect to Slack. After you have done that, you will 
-receive a new direct message from the Github app with a confirmation link where you need to log in to you github account 
+receive a new direct message from the GitHub app with a confirmation link where you need to log in to you GitHub account 
 to finish the installation. 
 
-Now you are all set up and have connected your Github repository to your Slack workspace! If you want to know how you 
-customize your Github notifications in Slack, please follow this [link](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) 
+Now you are all set up and have connected your GitHub repository to your Slack workspace! If you want to know how you 
+customize your GitHub notifications in Slack, please follow this [link](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) 
 to Slack's own guide.
 
 <a name="yaml"> </a>
@@ -137,7 +137,7 @@ YAML stands for "YAML Ain't Markup Language" and is a programming language that 
 and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses 
 indentation with spaces. [[7]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often 
 used in applications where data is being stored or transmitted, but also for configuration files. [[8]](https://en.wikipedia.org/wiki/YAML) When 
-it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
+it comes to GitHub Apps and Actions, YAML files are often used to configure the app or the action in a repository. 
 
 <a name="action"> </a>
 
@@ -163,7 +163,7 @@ have to do is to copy its yaml-code to the same .yml-file. It's super easy!
 
 ### Webhooks
 According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. 
-An example of a typical event that triggers a webhook is when someone is pushing code to a repository.
+An example of a typical event that triggers a webhook is when someone is pushing code to a repository
 [[5]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as 
 the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[6]](https://sendgrid.com/blog/whats-webhook/)
 
@@ -175,7 +175,7 @@ the event or action happens. This makes webhooks efficient both for the provider
 * A Discord account
 * A Discord server with a channel
 
-In this tutorial, we will show you how to install the Github action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify) in the video below. If you do not have a Discord account, please visit Discord's own [website](https://discordapp.com) and create one before continue with the video tutorial. 
+In this tutorial, we will show you how to install the GitHub action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify) in the video below. If you do not have a Discord account, please visit Discord's own [website](https://discordapp.com) and create one before continuing with the video tutorial. 
 
 The lines for the discord.yml that we use in the video:
 
