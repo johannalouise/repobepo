@@ -16,10 +16,6 @@
     
     2.3.1 [How to install GitHub Action using YAML](#action)
     
-    2.4 [XML](#xml)
-    
-    2.4.1 [How to install the GitHub App Travis on a Maven project using XML](#travis)
-    
     2.5 [Webhooks](#web)
     
     2.5.1 [How to install GitHub Action Discord using webhooks](#discord)
@@ -139,8 +135,8 @@ to Slack's own guide.
 ### YAML file 
 YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language 
 and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses 
-indentation with spaces. [[8]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often 
-used in applications where data is being stored or transmitted, but also for configuration files. [[9]](https://en.wikipedia.org/wiki/YAML) When 
+indentation with spaces. [[7]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often 
+used in applications where data is being stored or transmitted, but also for configuration files. [[8]](https://en.wikipedia.org/wiki/YAML) When 
 it comes to Github Apps an Actions, YAML files are often used for configurate the app or the action in a repository. 
 
 <a name="action"> </a>
@@ -163,58 +159,13 @@ directory called "workflows" in a directory called ".github".
 And this is enough for you to use this action in your GitHub. If you want to use another action, all you
 have to do is to copy its yaml-code to the same .yml-file. It's super easy!
 
-<a name="xml"> </a>
-
-### XML file
-XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. 
-[[5]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". 
-XML provides to access information and make it easier for application use, store, display and transmit data. 
-[[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, 
-XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. 
-[[11]](https://www.tutorialspoint.com/maven/maven_pom.htm)
-
-<a name="travis"> </a>
-
-#### How to install GitHub app Travis on a Maven project by using a XML file
-To install Travis, you'll first need to visit their [webpage](http://travis-ci.org/). Choose 'Sign in', and you will be
-redirected to sign in using you GitHub-account. 
-
-![](/images/travis-signin.png) 
-
-After 'Sign in' you need to give Travis access to your repositories. This doesn't mean that it will affect your repositories
-before you actually add the files, so don't worry if it lists a repository that you're not in charge of.
-
-![](/images/travis1.png) 
-![](/images/travis2.png) 
-
-After this you should add the repository you want to activate Travis on, by pressing +:
-
-![](/images/travis3.png) 
-
-and activate Travis on that repository bli "flicking the switch":
-
-![](/images/travis4.png) 
-
-and then finally activating the repository by pressing the button:
-
-![](/images/travis5.png) 
-
-The last part you need to do in order for making Travis run builds on your commits is to add a
-.travis.yml in the root of your project. This is in order to tell Travis what language you want
-it to build your project in. In our case, we added 
-
-            language: java
-as the only line in that .yml-file.
-
-Now on to the Maven-project and XML part. 
-
 <a name="web"> </a>
 
 ### Webhooks
 According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. 
 An example of a typical event that triggers a webhook is when someone is pushing code to a repository.
-[[6]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as 
-the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[7]](https://sendgrid.com/blog/whats-webhook/)
+[[5]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as 
+the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[6]](https://sendgrid.com/blog/whats-webhook/)
 
 <a name="discord"> </a>
 
@@ -265,18 +216,12 @@ Click on the video below to watch the video tutorial for Discord Message Notify.
 
 [4] https://www.tutorialspoint.com/yaml/index.htm 
 
-[5] https://en.wikipedia.org/wiki/XML
+[5] https://en.wikipedia.org/wiki/Webhook
 
-[6] https://en.wikipedia.org/wiki/Webhook
+[6] https://sendgrid.com/blog/whats-webhook/
 
-[7] https://sendgrid.com/blog/whats-webhook/
+[7] https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes
 
-[8] https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes
-
-[9] https://en.wikipedia.org/wiki/YAML
-
-[10] https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm
-
-[11] https://www.tutorialspoint.com/maven/maven_pom.htm
+[8] https://en.wikipedia.org/wiki/YAML
 
 
