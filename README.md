@@ -244,7 +244,7 @@ Click on the image below to watch the video tutorial for Discord Message Notify.
 
 ### Criteria
 
-We aim to achieve at least these criterias:
+We aim to achieve at least these criteria:
 
 **The TA can successful execute all the commands of the tutorial (mandatory)**
 * We have added images, lines of code and a video to make it easy for the TA to execute and install and integrate all the actions and apps that we have used in our tutorial.
@@ -254,6 +254,8 @@ We aim to achieve at least these criterias:
 
 **The tutorial is easy to follow**
 * This criterion is quite subjective, but we have asked some of our family members to try to install an app or actions from our guide, which they did with no problems.
+We believe we passed this criterion remarkable, since our family members do not have any specific knowledge of computer science.
+We also varied between images, text, and video in order to find something that suites all different learning means.
 
 **The tutorial is original, no such tutorial exists on the web**
 * We have not yet found any general tutorial for GitHub apps or actions. 
