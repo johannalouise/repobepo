@@ -85,20 +85,20 @@ If you do not have a Slack account or workspace, please follow the guide on Slac
 [website](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwif55LKy8ToAhUX5ZoKHX45Bx8YABAAGgJsbQ&ohost=www.google.com&cid=CAASEuRortX0GkgC4HvQYVOza5oKqA&sig=AOD64_0PQM7w4K-o45aoLOP1dIHoHc2pcg&q=&ved=2ahUKEwjU_IzKy8ToAhVLY5oKHTusCCYQ0Qx6BAgaEAE&adurl=) 
 before you continue with this tutorial.
 
-Firstly, you need to click on the button "Set up a plan", then you will be re-directed to the bottom of the page where you 
+Firstly, you need to click on the button "Set up a plan". After that, you will be re-directed to the bottom of the page where you 
 will see a green button with the text "Install it for free". 
 
 ![](/images/github_marketplace_slack.png)
 
-After clicking on the "Install it for free"-button, you will be re-directed to another page where you need to review your 
+After clicking on the "Install it for free" button, you will be re-directed to another page where you need to review your 
 order and begin the installation by clicking on the button "Complete order and begin installation".
 
 ![](/images/slack_review_order.png)
 
-You will be able to choose if you want the app to be installed on all repositories or only selected ones, and confirm your
- choice with your password.
+You will be able to choose if you want the app to be installed on all repositories or only selected ones, and also confirm your
+ choice with your own password.
 
-After you have installed the "Slack + GitHub" app for one of your repository, you need to go to your Slack account and 
+After you have installed the "Slack + GitHub" app for one of your repositories, you need to go to your Slack account and 
 install the GitHub application there too. You will find the application in the "Apps" section in the sidebar. Click on the 
 "Add"-button, and then you will be re-directed to Slack's tutorial on how to install the GitHub app in one of your workspaces.
 
@@ -106,12 +106,12 @@ install the GitHub application there too. You will find the application in the "
 
 In Slack's guide, you will receive information on how to subscribe specific repositories to a workspace and a channel, 
 but also how to take action in the Slack application. After you have read through Slack's guide on how you use their 
-GitHub application, you click on the "Add to Slack"-button.
+GitHub application, you click on the "Add to Slack" button.
 
 ![](/images/slack_guide_github.png)
 
 You will be able to decide which channels the GitHub application will have access to. After you have decided that, you 
-click on the "Install"-button at the bottom of the page. Shortly after you have clicked on the button, you will be 
+click on the "Install" button at the bottom of the page. Shortly after you have clicked on the button, you will be 
 re-directed to the workspace in Slack that you have chosen for the installation. After a few minutes, you should have 
 received a direct message from the GitHub application in you Slack workspace telling you that you have successfully 
 installed GitHub on this Slack workspace.
@@ -149,12 +149,26 @@ You can find the action when searching GitHub Marketplace.
 
 ![](/images/action-marketplace.png)
 
-In the documentation of the action is tells you what to copy on order to use it. 
+In the documentation of the action, you will find what you need to copy in order to use the action. 
 
 This text is yaml-code that you need to copy and paste into a .yml-fil in your repository. This file should be in a 
-directory called "workflows" in a directory called ".github".
+directory called "workflows" within a directory called ".github".
 
 ![](/images/intellij-yml.png) 
+
+The lines for the .yml file:
+```
+name: Check Markdown links
+
+on: push
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+```
 
 And this is enough for you to use this action in your GitHub. If you want to use another action, all you
 have to do is to copy its yaml-code to the same .yml-file. It's super easy!
@@ -200,7 +214,11 @@ jobs:
 
 ```
 
-Click on the video below to watch the video tutorial for Discord Message Notify.
+To clarify which part of the Discord webhook are used for the WEBHOOK_ID and the WEBHOOK_TOKEN see the general example below:
+
+``https://discordapp.com/api/webhooks/WEBHOOK_ID/WEBHOOK_TOKEN``
+
+Click on the image below to watch the video tutorial for Discord Message Notify.
 
 [![](/images/discord_youtube.png)](https://youtu.be/pBm-eHDz3Og)
 
@@ -224,4 +242,25 @@ Click on the video below to watch the video tutorial for Discord Message Notify.
 
 [8] https://en.wikipedia.org/wiki/YAML
 
+### Criteria
+
+We aim to achieve at least these criterias:
+
+**The TA can successful execute all the commands of the tutorial (mandatory)**
+* We have added images, lines of code and a video to make it easy for the TA to execute and install and integrate all the actions and apps that we have used in our tutorial.
+
+**The tutorial gives enough background**
+* We have added a smaller background for the significant part of each different sub tutorial. We have also added a general background on why you should use GitHub apps and actions.
+
+**The tutorial is easy to follow**
+* This criterion is quite subjective, but we have asked some of our family members to try to install an app or actions from our guide, which they did with no problems.
+
+**The tutorial is original, no such tutorial exists on the web**
+* We have not yet found any general tutorial for GitHub apps or actions. 
+
+**The tutorial is successful (attracts comments and success)**
+* We are thinking about to contact the creators of the Discord Message Notify and see if they want to use our video tutorial in their documentation. However, we would like to hear your thoughts about the video tutorial for the Discord action (if it is good enough), before we contact them.
+
+**The tutorial is doable in the browser without a local environment (eg on https://www.katacoda.com/) (optional)**
+* All material for this tutorial are accessible online. We have made our test repository public if someone want to fork it and test the different GitHub apps and actions with it. All prerequisites for the chosen apps and actions are also accessible online. The video tutorial for the action Discord Message Notify is also uploaded to Youtube.
 
