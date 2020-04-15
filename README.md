@@ -4,21 +4,24 @@
 1. [Background and benefits of GitHub Apps and Actions](#back)
 
     1.1. [Difference between GitHub Apps and Actions](#diff)
+    
 2. [How to install a GitHub App or Action]("how)
 
-    2.1 [Prerequisites](#pre)
+    2.1 [Introduction](#intro)
+
+    2.2 [Prerequisites](#pre)
     
-    2.2 [GitHub market](#market)
+    2.3 [GitHub market](#market)
     
-    2.2.1 [How to install the app Slack + Github](#slack)
+    2.3.1 [How to install the app Slack + Github](#slack)
     
-    2.3 [YAML](#yaml)
+    2.4 [YAML](#yaml)
     
-    2.3.1 [How to install GitHub Action using YAML](#action)
+    2.4.1 [How to install GitHub Action using YAML](#action)
     
-    2.4 [Webhooks](#web)
+    2.5 [Webhooks](#web)
     
-    2.4.1 [How to install GitHub Action Discord using webhooks](#discord)
+    2.5.1 [How to install GitHub Action Discord using webhooks](#discord)
     
 [References](#ref)
 
@@ -53,9 +56,19 @@ Doctrine containers and you don't need to deploy any code or serve an app in ord
 
 ## How to install an GitHub App or Action
 
+<a name="intro"> </a>
+
+### Introduction
+In this tutorial, we will show you how to install the GitHub apps and actions: 
+* [Slack + GitHub](https://github.com/marketplace/slack-github)
+* [Markdown link check](https://github.com/marketplace/actions/markdown-link-check)
+* [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify)
+
+We will guide you step by step how to install the apps and actions above, but also give you some necessary knowledge about the significant parts of each installation. We have chosen to show these three installations in this tutorial, because each one of them contains a part that differs from the others. These different parts are useful to understand to be able to install more apps or actions from the GitHub Marketplace.
+
 <a name="pre"> </a>
 
-### Prerequisites
+#### Prerequisites
 To be able to install an GitHub app or action you will need the following:
 * A GitHub account
 * A GitHub repository
@@ -141,7 +154,7 @@ it comes to GitHub Apps and Actions, YAML files are often used to configure the 
 
 <a name="action"> </a>
 
-#### How to install GitHub Action  by using a YAML file
+#### How to install GitHub action Markdown Link Check by using a YAML file
  [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) is a GitHub Action that
  automatically checks your markdown files and warns you if it finds any broken links.
 
@@ -223,6 +236,8 @@ Click on the image below to watch the video tutorial for Discord Message Notify.
 [![](/images/discord_youtube.png)](https://youtu.be/pBm-eHDz3Og)
 
 <a name="ref"> </a>
+
+## Conclusion
 
 ### References 
 
