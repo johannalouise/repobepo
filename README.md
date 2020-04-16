@@ -28,19 +28,19 @@
 <a name="back"> </a>
 
 ## Background and Benefits/Usage with GitHub Apps and Actions
-There are a few buzz words in the tech business and two of them are 'agile' and 'DevOps'. Just as the agile way
-of working is used to minimize misunderstandings between the customer and the company, DevOps is used to make
+
+There are a few words that frequently occurs when studying to become a software engineer and two of those 'agile' and 'DevOps'. 
+Just as the agile way of working is used to minimize misunderstandings between the customer and the company, DevOps is used to make
 sure the development of a service is efficient and contains as few errors as possible. Just like agile principles are 
 that you are working in short sprints and deliver often, DevOps principles is to shorten the development cycle and
 provide continuous delivery [[1]](https://en.wikipedia.org/wiki/DevOps). DevOps is also used to make the cycle more 
 smooth between the different parts of the project (such as backend, frontend) and make the team work more efficient and 
 homogeneous. 
 
-In order to have a smooth team work and a way to roll-back eventual unstable versions, there must be a version control system
-such as GitHub. By using GitHub, there is a possibility to use tools to automate different processes of the DevOps workflow
-like the build process and the test process. This is possible to do using tools built into GitHub, the version control system.
-These tools are helping developers to make the flow more efficient, since it is happening automatically and the developers 
-can focus on actually writing code [[2]](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/).
+The version control system GitHub plays an important role in DevOps, since it helps the team work and to roll-back eventual 
+unstable versions. By using GitHub, there is also a possibility to use tools to automate different processes of the DevOps workflow
+like the build process and the test process, which helps to smooth the cycle in DevOps. This is possible to do using tools built into GitHub 
+called GitHub Actions and GitHub Apps. [[2]](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/)
 
 <a name="diff"> </a>
 
@@ -50,7 +50,7 @@ Both GitHub Apps and GitHub Actions provide ways to build tools that are useful 
 An GitHub App can make an action on its own, by using the GitHub's API. For instance, the CI tool [Travis](https://travis-ci.com/) is testing and deploying a project by itself whenever someone make a commit to the repository.
 
 An GitHub Action is a less complicated version of GitHub Apps, since it can run directly on runner machines or in 
-Doctrine containers and you don't need to deploy any code or serve an app in order to use it [[3]](https://help.github.com/en/actions/building-actions/about-actions#comparing-github-actions-to-github-apps).
+[Docker containers](https://en.wikipedia.org/wiki/Docker_(software)) (a standardized, encapsulated environment that runs applications) and you don't need to deploy any code or serve an app in order to use it [[3]](https://help.github.com/en/actions/building-actions/about-actions#comparing-github-actions-to-github-apps).
 
 <a name="how"> </a>
 
