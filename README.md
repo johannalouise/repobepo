@@ -8,20 +8,20 @@
 2. [How to install a GitHub App or Action](#how)
 
     2.1 [Introduction](#intro)
-
-    2.2 [Prerequisites](#pre)
     
-    2.3 [GitHub market](#market)
+    2.2 [GitHub Marketplace](#market)
     
-    2.3.1 [How to install the app Slack + Github](#slack)
+    2.2.1 [How to install the app Slack + Github](#slack)
     
-    2.4 [YAML](#yaml)
+    2.3 [YAML](#yaml)
     
-    2.4.1 [How to install GitHub Action using YAML](#action)
+    2.3.1 [How to install GitHub Action using YAML](#action)
     
-    2.5 [Webhooks](#web)
+    2.4 [Webhooks](#web)
     
-    2.5.1 [How to install GitHub Action Discord using webhooks](#discord)
+    2.4.1 [How to install GitHub Action Discord using webhooks](#discord)
+    
+    2.5 [XML](#xml)
     
 [References](#ref)
 
@@ -59,21 +59,24 @@ Doctrine containers and you don't need to deploy any code or serve an app in ord
 <a name="intro"> </a>
 
 ### Introduction
-In this tutorial, we will show you how to install the GitHub apps and actions: 
-* [Slack + GitHub](https://github.com/marketplace/slack-github)
-* [Markdown link check](https://github.com/marketplace/actions/markdown-link-check)
-* [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify)
+In this tutorial, we will show you how to install, step by step, three different apps and actions from the GitHub marketplace. We have decided to show how to install these apps because each one of them contains a part that differs from the others. These parts are also important to understand to be able to install more apps or actions from the GitHub Marketplace. 
 
-We will guide you step by step how to install the apps and actions above, but also give you some necessary knowledge about the significant parts of each installation. We have chosen to show these three installations in this tutorial, because each one of them contains a part that differs from the others. These different parts are useful to understand to be able to install more apps or actions from the GitHub Marketplace.
+Most of the apps and actions in the GitHub Marketplace have a smaller guide on how to install the app or action. However, most of them require that you have some previous knowledge about some of the steps in the guide. They take for granted that all GitHub users know what a webhook is for instance, which are not obvious for everyone. The purpose of this tutorial is to provide you with necessary information that will help you install different GitHub apps and actions in the future. 
 
-<a name="pre"> </a>
+In this tutorial, we will go through these areas: 
 
-#### Prerequisites
-To be able to install an GitHub app or action you will need the following:
-* A GitHub account
-* A GitHub repository
+**Github Marketplace**  
+What is the GitHub Marketplace, and how do you use it? For this part, we will also show you how you install the application [Slack + GitHub](https://github.com/marketplace/slack-github) from the GitHub Marketplace.
 
-If you do not have a GitHub account or repository yet, please follow [GitHub's guide](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) before continuing with this one.
+**YAML**  
+What is YAML, and how do you use it to be able to install some of the available GitHub apps or actions? In addition, we will also show you how to install the action [Markdown link check](https://github.com/marketplace/actions/markdown-link-check).
+
+**Webhooks**  
+What is a Webhook? How do you use them, and what types of actions triggers them? In this tutorial, we will also demonstrate how you use webhooks to be able to install the action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify).
+
+**XML**  
+What is XML, and when do you need one? For this part, we will give you an example of an GitHub application that uses an XML-file for Java projects.
+
 
 <a name="market"> </a>
 
@@ -235,6 +238,16 @@ Click on the image below to watch the video tutorial for Discord Message Notify.
 
 [![](/images/discord_youtube.png)](https://youtu.be/pBm-eHDz3Og)
 
+<a name="XML"> </a>
+
+### XML file
+XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. 
+[[9]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". 
+XML provides to access information and make it easier for application use, store, display and transmit data. 
+[[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, 
+XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. 
+[[11]](https://www.tutorialspoint.com/maven/maven_pom.htm) One example of an applications that sometimes need a XML file to create a POM unit is the application [Travis](https://github.com/marketplace/travis-ci). 
+
 <a name="ref"> </a>
 
 ## Conclusion
@@ -256,6 +269,12 @@ Click on the image below to watch the video tutorial for Discord Message Notify.
 [7] https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes
 
 [8] https://en.wikipedia.org/wiki/YAML
+
+[9] https://en.wikipedia.org/wiki/XML
+
+[10] https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm
+
+[11] https://www.tutorialspoint.com/maven/maven_pom.htm
 
 ### Criteria
 
