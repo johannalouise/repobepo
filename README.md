@@ -5,7 +5,7 @@
 
     1.1. [Difference between GitHub Apps and Actions](#diff)
     
-2. [How to install a GitHub App or Action]("how)
+2. [How to install a GitHub App or Action](#how)
 
     2.1 [Introduction](#intro)
 
