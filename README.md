@@ -4,30 +4,34 @@
 1. [Background and benefits of GitHub Apps and Actions](#back)
 
     1.1. [Difference between GitHub Apps and Actions](#diff)
-    
-2. [How to install a GitHub App or Action](#how)
+   
+2. [Installation of GitHub Apps and Actions](#install)
 
     2.1 [Introduction](#intro)
     
     2.2 [GitHub Marketplace](#market)
     
-    2.2.1 [How to install the app Slack + Github](#slack)
-    
     2.3 [YAML](#yaml)
-    
-    2.3.1 [How to install GitHub Action using YAML](#action)
     
     2.4 [Webhooks](#web)
     
-    2.4.1 [How to install GitHub Action Discord using webhooks](#discord)
-    
     2.5 [XML](#xml)
+    
+3. [Tutorials](#tutor)
+    
+    3.1 [How to install the app Slack + Github](#slack)
+    
+    3.2 [How to install GitHub Action using YAML](#action)
+    
+    3.3 [How to install GitHub Action Discord using webhooks](#discord)
+    
+4. [Conclusion](#conc)
     
 [References](#ref)
 
 <a name="back"> </a>
 
-## Background and Benefits/Usage with GitHub Apps and Actions
+## Background and benefits with GitHub Apps and Actions
 
 There are a few words that frequently occurs when studying to become a software engineer and two of those 'agile' and 'DevOps'. 
 Just as the agile way of working is used to minimize misunderstandings between the customer and the company, DevOps is used to make
@@ -52,9 +56,9 @@ An GitHub App can make an action on its own, by using the GitHub's API. For inst
 An GitHub Action is a less complicated version of GitHub Apps, since it can run directly on runner machines or in 
 [Docker containers](https://en.wikipedia.org/wiki/Docker_(software)) (a standardized, encapsulated environment that runs applications) and you don't need to deploy any code or serve an app in order to use it [[3]](https://help.github.com/en/actions/building-actions/about-actions#comparing-github-actions-to-github-apps).
 
-<a name="how"> </a>
+<a name="install"> </a>
 
-## How to install an GitHub App or Action
+## Installation of GitHub Apps and Actions
 
 <a name="intro"> </a>
 
@@ -89,11 +93,46 @@ Here is a link to the current available apps and actions in the marketplace: [Gi
 In the GitHub marketplace, you will find a lot of different tools that you can install and integrate to your repository at GitHub. Some of the tools are also integrating with other external tools such as
 [Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). To demonstrate how to install an app or action from the marketplace, we will use the app [Slack + GitHub](https://github.com/marketplace/slack-github).
 
+
+<a name="yaml"> </a>
+
+### YAML file 
+YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language 
+and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses 
+indentation with spaces. [[7]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often 
+used in applications where data is being stored or transmitted, but also for configuration files. [[8]](https://en.wikipedia.org/wiki/YAML) When 
+it comes to GitHub Apps and Actions, YAML files are often used to configure the app or the action in a repository. 
+
+
+<a name="web"> </a>
+
+### Webhooks
+According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. 
+An example of a typical event that triggers a webhook is when someone is pushing code to a repository
+[[5]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as 
+the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[6]](https://sendgrid.com/blog/whats-webhook/)
+
+
+<a name="XML"> </a>
+
+### XML file
+XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. 
+[[9]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". 
+XML provides to access information and make it easier for application use, store, display and transmit data. 
+[[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, 
+XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. 
+[[11]](https://www.tutorialspoint.com/maven/maven_pom.htm) One example of an applications that sometimes need a XML file to create a POM unit is the application [Travis](https://github.com/marketplace/travis-ci). 
+
+
+<a name="tutor"> </a>
+
+## Tutorials
+
 <a name="slack"> </a>
 
-#### How to install the app [Slack + GitHub](https://github.com/marketplace/slack-github)
+### How to install the app [Slack + GitHub](https://github.com/marketplace/slack-github)
 
-##### Prerequisites
+#### Prerequisites
 * A Slack account
 * A workspace in Slack
 
@@ -146,18 +185,10 @@ Now you are all set up and have connected your GitHub repository to your Slack w
 customize your GitHub notifications in Slack, please follow this [link](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) 
 to Slack's own guide.
 
-<a name="yaml"> </a>
-
-### YAML file 
-YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming language 
-and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAMl uses 
-indentation with spaces. [[7]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often 
-used in applications where data is being stored or transmitted, but also for configuration files. [[8]](https://en.wikipedia.org/wiki/YAML) When 
-it comes to GitHub Apps and Actions, YAML files are often used to configure the app or the action in a repository. 
 
 <a name="action"> </a>
 
-#### How to install GitHub action Markdown Link Check by using a YAML file
+### How to install GitHub action Markdown Link Check by using a YAML file
  [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) is a GitHub Action that
  automatically checks your markdown files and warns you if it finds any broken links.
 
@@ -189,17 +220,10 @@ jobs:
 And this is enough for you to use this action in your GitHub. If you want to use another action, all you
 have to do is to copy its yaml-code to the same .yml-file. It's super easy!
 
-<a name="web"> </a>
-
-### Webhooks
-According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. 
-An example of a typical event that triggers a webhook is when someone is pushing code to a repository
-[[5]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as 
-the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[6]](https://sendgrid.com/blog/whats-webhook/)
 
 <a name="discord"> </a>
 
-#### How to install GitHub action Discord Message Notify by using Webhooks
+### How to install GitHub action Discord Message Notify by using Webhooks
 
 ##### Prerequisites
 * A Discord account
@@ -238,19 +262,11 @@ Click on the image below to watch the video tutorial for Discord Message Notify.
 
 [![](/images/discord_youtube.png)](https://youtu.be/pBm-eHDz3Og)
 
-<a name="XML"> </a>
-
-### XML file
-XML stands for "Extensible Markup Language" and is a markup language for encoding readable documents. 
-[[9]](https://en.wikipedia.org/wiki/XML) To define and structure the data, XML uses tags like "< value > ". 
-XML provides to access information and make it easier for application use, store, display and transmit data. 
-[[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, 
-XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. 
-[[11]](https://www.tutorialspoint.com/maven/maven_pom.htm) One example of an applications that sometimes need a XML file to create a POM unit is the application [Travis](https://github.com/marketplace/travis-ci). 
-
-<a name="ref"> </a>
+<a name="conc"> </a>
 
 ## Conclusion
+
+<a name="ref"> </a>
 
 ### References 
 
