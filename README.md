@@ -85,13 +85,24 @@ What is XML, and when do you need one? For this part, we will give you an exampl
 <a name="market"> </a>
 
 ### GitHub Marketplace
-First of all, you need to visit the marketplace of GitHub Apps. 
-Here is a link to the current available apps and actions in the marketplace: [GitHub Marketplace](https://github.com/marketplace)
+To be able to install an GitHub app or action, you need to visit the marketplace of GitHub Apps. Here is a link to the current available apps and actions in the marketplace: [GitHub Marketplace](https://github.com/marketplace)
 
 ![](/images/github_marketplace_apps_actions.png)
 
 In the GitHub marketplace, you will find a lot of different tools that you can install and integrate to your repository at GitHub. Some of the tools are also integrating with other external tools such as
-[Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). To demonstrate how to install an app or action from the marketplace, we will use the app [Slack + GitHub](https://github.com/marketplace/slack-github).
+[Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/) and [Jira](https://www.atlassian.com/software/jira). 
+
+Most of the apps and actions in the marketplace have individual steps that you need to do to be able to install the app or action.  However, there are some steps that you need to do for several apps in the GitHub marketplace. These steps are:
+
+1. Visit the [GitHub Marketplace](https://github.com/marketplace)
+2. Search for the app or action (if you don't find it directly at the front page of the marketplace)
+3. Click on the button "Set up plan"
+4. Choose which plan you want to use. NOTE: Some of the apps only have one plan, and in those cases you will probably skip this step of the installation.
+5. Review you order/plan. Most of the apps have a free plan, but there might be versions that cost in order to be used.
+6. Complete the order and begin the installation. 
+6. Chose which repositories the app will have access to.
+
+To demonstrate how to install one app or action from the marketplace, we will use the app [Slack + GitHub](https://github.com/marketplace/slack-github). 
 
 
 <a name="yaml"> </a>
