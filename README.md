@@ -118,7 +118,7 @@ it comes to GitHub Apps and Actions, YAML files are often used to configure the 
 <a name="web"> </a>
 
 ### Webhooks
-According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. [[5]](https://en.wikipedia.org/wiki/Webhook) Webhooks are used to provide and deliver data to other applications as the event or action happens. [[6]](https://sendgrid.com/blog/whats-webhook/) An example of a typical event that triggers a webhook is when someone is pushing code to a repository. In GitHub, you can decide which events you would like to receive payloads for. There are several types of events in GitHub that can be used for webhooks. For instance:
+According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. [[5]](https://en.wikipedia.org/wiki/Webhook) Webhooks are used to provide and deliver data to other applications as the event or action happens. [[6]](https://sendgrid.com/blog/whats-webhook/) An example of a typical event that triggers a webhook is when someone push code to a repository. In GitHub, you can decide which events you would like to receive payloads for. There are several types of events in GitHub that can be used for webhooks. For instance:
 * Pull requests
 * When someone create an issue or add an issue comment
 * Push events (when someone push code to a repository)
@@ -129,6 +129,17 @@ If you want to know more about which types of events and actions that can be use
 As we mentioned before, you can decide which types of events a webhook will be triggered by. In the settings of your repository, you can add a webhook and decide if you want to receive payload for all types of events or only specific ones. 
 
 ![](/images/webook_settings.png)
+
+The installation of an GitHub app or action that uses webhooks differs between different apps and actions. Down below, we have tried to summarize the most frequent steps that you need to do to be able to install an app or action that uses webhooks.
+
+1. Add the external application's webhook address into your repository's settings.
+2. Decide which types of events trigger the webhook.
+3. Create an yaml file that consists of the necessary information that you need to configurate the app or action into your repository. Most of the time, the creator of the app or action will give you the code that you need to be able to use the app or action. You will find it in the documentation of the GitHub app or action.
+4. Add the yaml file to your repository. Some of the apps and actions require that you put the yaml file in the directory path ``.github / workflows / your_file.yml`` to be able to fulfill the installation correctly. Try it if you don't get it to work.
+5. In the yaml file, you will most likely find a line that includes something similar to ``SECRETS: WEBHOOK_ID``, ``SECRETS: ACCESS_TOKEN``, ``SECRETS: GITHUB_SECRET``, which means that you will need to add some parts of the webhook into the "Secrets" in your repository's settings. The purpose of this step is to give access to the external application or action, without have to exploit the secret token or id directly in your repository.
+
+NOTE: Some applications and actions have already done step 1 and 2 for you. Therefore, you might only need to create an yaml file with the needed set up and add some kind of access token into your "Secrets" in the settings of the repository. In our tutorial for the action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify), we only need to do the steps 3 to 5 because they handle the first two parts.
+
 
 
 <a name="XML"> </a>
