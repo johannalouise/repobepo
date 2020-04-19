@@ -118,10 +118,17 @@ it comes to GitHub Apps and Actions, YAML files are often used to configure the 
 <a name="web"> </a>
 
 ### Webhooks
-According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. 
-An example of a typical event that triggers a webhook is when someone is pushing code to a repository
-[[5]](https://en.wikipedia.org/wiki/Webhook). Webhooks are used to provide and deliver data to other applications as 
-the event or action happens. This makes webhooks efficient both for the provider and the consumer. [[6]](https://sendgrid.com/blog/whats-webhook/)
+According to Wikipedia, webhooks are user-defined HTTP callbacks that are triggered by a certain event or action. [[5]](https://en.wikipedia.org/wiki/Webhook) Webhooks are used to provide and deliver data to other applications as the event or action happens. [[6]](https://sendgrid.com/blog/whats-webhook/) An example of a typical event that triggers a webhook is when someone is pushing code to a repository. In GitHub, you can decide which events you would like to receive payloads for. There are several types of events in GitHub that can be used for webhooks. For instance:
+* Pull requests
+* When someone create an issue or add an issue comment
+* Push events (when someone push code to a repository)
+* When someone forks the repository
+
+If you want to know more about which types of events and actions that can be used for a webhook in GitHub, you can read GitHub's own [documentation](https://developer.github.com/webhooks/) for webhooks in GitHub. 
+
+As we mentioned before, you can decide which types of events a webhook will be triggered by. In the settings of your repository, you can add a webhook and decide if you want to receive payload for all types of events or only specific ones. 
+
+![](/images/webook_settings.png)
 
 
 <a name="XML"> </a>
