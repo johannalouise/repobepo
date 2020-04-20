@@ -327,6 +327,10 @@ For this tutorial, we have also created a screencast to demonstrate how to insta
 
 ## Conclusion
 
+In this tutorial we have covered what GitHub Actions and GitHub Apps are, the benefits of them
+and why they are a part of DevOps. We have described four ways to get started with GitHub Apps
+and GitHub Actions and also provided detailed tutorials for three of these.
+
 <a name="ref"> </a>
 
 ### References 
