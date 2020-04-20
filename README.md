@@ -258,9 +258,31 @@ have to do is to copy its yaml-code to the same .yml-file. It's super easy!
 * A Discord account
 * A Discord server with a channel
 
-In this tutorial, we will show you how to install the GitHub action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify) in the video below. If you do not have a Discord account, please visit Discord's own [website](https://discordapp.com) and create one before continuing with the video tutorial. 
+If you do not have a Discord account, please visit Discord's own [website](https://discordapp.com) and create one before you continue with this tutorial.
 
-The lines for the discord.yml that we use in the video:
+![](/images/discord_message_notify.png) 
+
+First of all, you need to log into [Discord](https://discordapp.com) and go to the server you would like to connect with your GitHub repository. In the left corner at the top of the page, you will find the Server Settings. 
+
+![](/images/discord_server.png) 
+
+![](/images/discord_settings.png) 
+
+In the settings of the server, you will find an option named Webhooks. In the Webhooks, you can create a webhook that you can use in GitHub for the action Discord Message Notify. 
+
+![](/images/create_discord_webhook.png) 
+
+You can decide what the webhook's name should be, which discord channel it should be connected to and add an image to the webhook in Discord. In this tutorial, the webhook will be called Cat Bot and we have used an free image of a [cat](https://webstockreview.net/pict/getfirst) from Google. You can find the image that we use in the folder named `images` in this repository.
+
+![](/images/edit_webhook.png) 
+
+After you have decided the name of the webhook etc. you can go back to your repository. Now we are going to create the yaml file that contains the set up for the action Discord Message Notify. In the action's [documentation](https://github.com/marketplace/actions/discord-message-notify) you will see some examples of different set ups that you can use for your own repository, and what is the purpose of the different input variables in the set up. 
+
+First of all, if you don't have the folders `.github` and `workflows` you can create them at the same time as the yaml file by naming the file `.github/workflows/discord.yaml`.
+
+![](/images/discord_yaml.png) 
+
+The lines for the discord.yml that we use in this tutorial:
 
 ```
 name: discord message
@@ -283,11 +305,21 @@ jobs:
 
 ```
 
+After you have created the yaml file, you will need to add your WEBHOOK_ID and WEBHOOK_TOKEN to the Secrets of your repository. Go back to Discord and the settings of your webhook, and copy the webhook's URL. This URL is unique for your own webhook, and it contains an ID and a TOKEN that we need to use to give access to the action. Otherwise, the action will not be able to create messages in our channel.
+
 To clarify which part of the Discord webhook are used for the WEBHOOK_ID and the WEBHOOK_TOKEN see the general example below:
 
 ``https://discordapp.com/api/webhooks/WEBHOOK_ID/WEBHOOK_TOKEN``
 
-Click on the image below to watch the video tutorial for Discord Message Notify.
+In the settings of your repository, you will find your Secrets. In the Secrets, you can add a new secret and remove old ones. It is really important that you name the secrets correctly (WEBHOOK_ID and WEBHOOK_TOKEN) and use the right part of the URL for the different secrets. In the image below, we have created two new secrets named WEBHOOK_ID and WEBHOOK_TOKEN.
+
+![](/images/secrets_github.png) 
+
+Now we have installed the action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify), and you can test it by creating a new file or make a commit to the repository. If the installation succeeded, you should have received a message in your Discord channel about the new commit in your repository. In our case, the "Cat Bot" have sent us a message about a new commit in this repository.
+
+![](/images/cat_bot_discord.png) 
+
+For this tutorial, we have also created a screencast to demonstrate how to install the action [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify). Click on the image below to watch the video tutorial for Discord Message Notify.
 
 [![](/images/discord_youtube.png)](https://youtu.be/pBm-eHDz3Og)
 
