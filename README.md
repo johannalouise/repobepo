@@ -331,6 +331,9 @@ In this tutorial we have covered what GitHub Actions and GitHub Apps are, the be
 and why they are a part of DevOps. We have described four ways to get started with GitHub Apps
 and GitHub Actions and also provided detailed tutorials for three of these.
 
+If you want to read more about GitHub Actions, you can visit GitHub's own [webpage](https://help.github.com/en/actions/getting-started-with-github-actions).
+
+
 <a name="ref"> </a>
 
 ### References 
