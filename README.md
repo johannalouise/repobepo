@@ -1,4 +1,4 @@
-# Tutorial for installing an GitHub App or Action
+# Tutorial for installing a GitHub App or Action
 
 ## Table of contents
 1. [Background and benefits of GitHub Apps and Actions](#back)
@@ -98,7 +98,7 @@ Most of the apps and actions in the marketplace have individual steps that you n
 2. Search for the app or action (if you don't find it directly at the front page of the marketplace)
 3. Click on the button "Set up plan"
 4. Choose which plan you want to use. NOTE: Some of the apps only have one plan, and in those cases, you will probably skip this step of the installation.
-5. Review your order/plan. Most of the apps have a free plan, but there might be versions that cost in order to be used.
+5. Review your order/plan. Most of the apps have a free plan, but there might be versions that cost to be used.
 6. Complete the order and begin the installation. 
 6. Chose which repositories the app will have access to.
 
@@ -108,7 +108,7 @@ To demonstrate how to install one app or action from the marketplace, we will us
 <a name="yaml"> </a>
 
 ### YAML file 
-YAML stands for "YAML Ain't Markup Language" and is a programming languages that works well with other programming language 
+YAML stands for "YAML Ain't Markup Language" and is a programming language that works well with other programming languages 
 and for data serialization.[[4]](https://www.tutorialspoint.com/yaml/index.htm) To define and structure the data, YAML uses 
 indentation with spaces. [[7]](https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes) The YAML language is often 
 used in applications where data is being stored or transmitted, but also for configuration files. [[8]](https://en.wikipedia.org/wiki/YAML) When 
@@ -124,7 +124,7 @@ According to Wikipedia, webhooks are user-defined HTTP callbacks that are trigge
 * Push events (when someone pushes code to a repository)
 * When someone forks the repository
 
-If you want to know more about which types of events and actions that can be used for a webhook in GitHub, you can read GitHub's own [documentation](https://developer.github.com/webhooks/) for webhooks in GitHub. 
+If you want to know more about which types of events and actions that can be used for a webhook in GitHub, you can read GitHub's [documentation](https://developer.github.com/webhooks/) for webhooks in GitHub. 
 
 As we mentioned before, you can decide which types of events a webhook will be triggered by. In the settings of your repository, you can add a webhook and decide if you want to receive payload for all types of events or only specific ones. 
 
@@ -134,7 +134,7 @@ The installation of a GitHub app or action that uses webhooks differs between di
 
 1. Add the external application's webhook address into your repository's settings.
 2. Decide which types of events trigger the webhook.
-3. Create an YAML file that consists of the necessary information that you need to configure the app or action into your repository. Most of the time, the creator of the app or action will give you the code that you need to be able to use the app or action. You will find it in the documentation of the GitHub app or action.
+3. Create a YAML file that consists of the necessary information that you need to configure the app or action into your repository. Most of the time, the creator of the app or action will give you the code that you need to be able to use the app or action. You will find it in the documentation of the GitHub app or action.
 4. Add the YAML file to your repository. Some of the apps and actions require that you put the YAML file in the directory path ``.github / workflows / your_file.yml`` to be able to fulfill the installation correctly. Try it if you don't get it to work.
 5. In the YAML file, you will most likely find a line that includes something similar to ``SECRETS: WEBHOOK_ID``, ``SECRETS: ACCESS_TOKEN``, ``SECRETS: GITHUB_SECRET``, which means that you will need to add some parts of the webhook into the "Secrets" in your repository's settings. The purpose of this step is to give access to the external application or action, without having to exploit the secret token or id directly in your repository.
 
@@ -373,7 +373,7 @@ We aim to achieve at least these criteria:
 **The tutorial is easy to follow**
 * This criterion is quite subjective, but we have asked some of our family members to try to install an app or actions from our guide, which they did with no problems.
 We believe we passed this criterion remarkable since our family members do not have any specific knowledge of computer science.
-We also varied between images, text, and video in order to find something that suits all different learning means.
+We also varied between images, text, and video to find something that suits all different learning means.
 
 **The tutorial is original, no such tutorial exists on the web**
 * We have not yet found any general tutorial for GitHub apps or actions. 
