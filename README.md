@@ -343,11 +343,20 @@ In Integrations, you will find all the GitHub apps you have installed right now.
 
 ![](/images/applications_repo.png) 
 
+Click on the button Configure beside the app you want to uninstall. After that, you will be redirected to a page with the documentation about the app, the app's permissions and its repository access. At the bottom of the page, you will find a red square labeled "Danger zone" that contains a button named Uninstall.
+
+![](/images/danger_zone.png) 
+
+If you click on the button Uninstall, an alert message occurs like the one below. Click on the option "OK" and you have successfully uninstalled the app!
+
+![](/images/uninstall_message.png) 
 
 
 ### Remove the added Set Up and Configuration
 
-The second approach is basically remove everything you created or added to be able to install the GitHub app or action. One typical thing you need to remove to uninstall an app or action is the yaml file with the configuration. for the
+The second approach is basically remove everything you created or added to be able to install the GitHub app or action. One typical thing you need to remove to uninstall an app or action is the YAML file with the configuration. For instance, if we would like to remove the [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) that we installed in an earlier tutorial, we only need to remove the YAML file named ``action.yml`` located in the workflows folder.  
+
+If the app or action uses webhooks, you might need to remove the tokens and ID:s that you have added to the secrets. You might also need to remove the webhook from the repository's settings. 
 
 
 <a name="conc"> </a>
