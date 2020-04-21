@@ -25,6 +25,8 @@
     
     3.3 [How to install GitHub Action Discord using webhooks](#discord)
     
+4. [Uninstall a GitHub App or Action](#uninstall)
+    
 4. [Conclusion](#conc)
     
 [References](#ref)
@@ -323,6 +325,40 @@ For this tutorial, we have also created a screencast to demonstrate how to insta
 
 [![](/images/discord_youtube.png)](https://youtu.be/pBm-eHDz3Og)
 
+<a name="uninstall"> </a>
+
+## Uninstall a Github App or Action
+
+During the making of this tutorial, we have tried to install and uninstall different types of GitHub apps and actions. There are mainly two different approaches to make to uninstall an app or action from the GitHub marketplace. Most of the time, the GitHub apps or actions require at least one of them. However, they might have individual steps that you need to to do be able to uninstall the app or action properly. In this tutorial, we will only give you an overview of this two types of approaches. 
+
+### Configue Integrations
+
+The first approach is most used for those apps that you needed to set up an plan for when you installed it from the GitHub marketplace. To demonstrate this approach, we will uninstall the app [Imgbot](https://github.com/marketplace/imgbot) that we have installed for this repository earlier. 
+
+In the settings of you repository, you will find an option called Integrations. 
+
+![](/images/github_settings.png) 
+
+In Integrations, you will find all the GitHub apps you have installed right now. 
+
+![](/images/applications_repo.png) 
+
+Click on the button Configure beside the app you want to uninstall. After that, you will be redirected to a page with the documentation about the app, the app's permissions and its repository access. At the bottom of the page, you will find a red square labeled "Danger zone" that contains a button named Uninstall.
+
+![](/images/danger_zone.png) 
+
+If you click on the button Uninstall, an alert message occurs like the one below. Click on the option "OK" and you have successfully uninstalled the app!
+
+![](/images/uninstall_message.png) 
+
+
+### Remove the added Set Up and Configuration
+
+The second approach is basically remove everything you created or added to be able to install the GitHub app or action. One typical thing you need to remove to uninstall an app or action is the YAML file with the configuration. For instance, if we would like to remove the [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) that we installed in an earlier tutorial, we only need to remove the YAML file named ``action.yml`` located in the workflows folder.  
+
+If the app or action uses webhooks, you might need to remove the tokens and ID:s that you have added to the secrets. You might also need to remove the webhook from the repository's settings. 
+
+
 <a name="conc"> </a>
 
 ## Conclusion
@@ -379,7 +415,7 @@ We also varied between images, text, and video to find something that suits all 
 * We have not yet found any general tutorial for GitHub apps or actions. 
 
 **The tutorial is successful (attracts comments and success)**
-* We are thinking about to contact the creators of the Discord Message Notify and see if they want to use our video tutorial in their documentation. However, we would like to hear your thoughts about the video tutorial for the Discord action (if it is good enough), before we contact them.
+* We are thinking about to contact the creators of the Discord Message Notify and see if they want to use our tutorial in their documentation. However, we would like to hear your thoughts about the tutorial for the Discord action (if it is good enough), before we contact them.
 
 **The tutorial is doable in the browser without a local environment (eg on https://www.katacoda.com/) (optional)**
 * All materials for this tutorial are accessible online. We have made our test repository public if someone wants to fork it and test the different GitHub apps and actions with it. All prerequisites for the chosen apps and actions are also accessible online. The video tutorial for the action Discord Message Notify is also uploaded to Youtube.
