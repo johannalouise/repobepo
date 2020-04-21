@@ -327,11 +327,11 @@ For this tutorial, we have also created a screencast to demonstrate how to insta
 
 <a name="uninstall"> </a>
 
-## Uninstall a Github App or Action
+### Uninstall a Github App or Action
 
 During the making of this tutorial, we have tried to install and uninstall different types of GitHub apps and actions. There are mainly two different approaches to make to uninstall an app or action from the GitHub marketplace. Most of the time, the GitHub apps or actions require at least one of them. However, they might have individual steps that you need to to do be able to uninstall the app or action properly. In this tutorial, we will only give you an overview of these two types of approaches. 
 
-### Configure Integrations
+##### Configure Integrations
 
 The first approach is mostly used for those apps that you needed to set up a plan for when you installed it from the GitHub marketplace. To demonstrate this approach, we will uninstall the app [Imgbot](https://github.com/marketplace/imgbot) that we have installed for this repository earlier. 
 
@@ -352,7 +352,7 @@ If you click on the button Uninstall, an alert message occurs like the one below
 ![](/images/uninstall_message.png) 
 
 
-### Remove the added Set Up and Configuration
+##### Remove the added Set Up and Configuration
 
 The second approach is to remove everything you created or added to be able to install the GitHub app or action. One typical thing you need to remove to uninstall an app or action is the YAML file with the configuration. For instance, if we would like to remove the [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) that we installed in an earlier tutorial, we only need to remove the YAML file named ``action.yml`` located in the workflow folder.  
 
