@@ -19,7 +19,7 @@
     
 3. [Tutorials](#tutor)
     
-    3.1 [How to install the app Slack + Github](#slack)
+    3.1 [How to install the GitHub App Slack + Github](#slack)
     
     3.2 [How to install GitHub Action using YAML](#action)
     
@@ -35,7 +35,7 @@
 
 ## Background and benefits with GitHub Apps and Actions
 
-There are a few words that frequently occur when studying to become a software engineer and two of those 'agile' and 'DevOps'. 
+There are a few words that frequently occur when studying to become a software engineer and two of those are 'agile' and 'DevOps'. 
 Just as the agile way of working is used to minimize misunderstandings between the customer and the company, DevOps is used to make
 sure the development of a service is efficient and contains as few errors as possible. Just like agile principles are 
 that you are working in short sprints and deliver often, DevOps principles are to shorten the development cycle and
@@ -65,7 +65,7 @@ A GitHub Action is a less complicated version of GitHub Apps since it can run di
 <a name="intro"> </a>
 
 ### Introduction
-In this tutorial, we will show you how to install, step-by-step, three different apps, and actions from the GitHub marketplace. We have decided to show how to install these apps because each one of them contains a part that differs from the others. These parts are also important to understand to be able to install more apps or actions from the GitHub Marketplace. 
+In this tutorial, we will show you how to install, step-by-step, three different apps and actions from the GitHub Marketplace. We have decided to show how to install these apps because each one of them contains a part that differs from the others. These parts are also important to understand to be able to install more apps or actions from the GitHub Marketplace. 
 
 Most of the apps and actions in the GitHub Marketplace have a smaller guide on how to install the app or action. However, most of them require that you have some previous knowledge about some of the steps in the guide. They take for granted that all GitHub users know what a webhook is for instance, which are not obvious for everyone. The purpose of this tutorial is to provide you with the necessary information that will help you install different GitHub apps and actions in the future. 
 
@@ -91,10 +91,10 @@ To be able to install a GitHub app or action, you need to visit the marketplace 
 
 ![](/images/github_marketplace_apps_actions.png)
 
-In the GitHub marketplace, you will find a lot of different tools that you can install and integrate into your repository at GitHub. Some of the tools are also integrating with other external tools such as
+In the GitHub Marketplace, you will find a lot of different tools that you can install and integrate into your repository at GitHub. Some of the tools are also integrating with other external tools such as
 [Slack](https://slack.com/intl/en-se/), [Jupyter](https://jupyter.org/), and [Jira](https://www.atlassian.com/software/jira). 
 
-Most of the apps and actions in the marketplace have individual steps that you need to do to be able to install the app or action.  However, there are some steps that you need to do for several apps in the GitHub marketplace. These steps are:
+Most of the apps and actions in the marketplace have individual steps that you need to do to be able to install the app or action.  However, there are some steps that you need to do for several apps in the GitHub Marketplace. These steps are:
 
 1. Visit the [GitHub Marketplace](https://github.com/marketplace)
 2. Search for the app or action (if you don't find it directly at the front page of the marketplace)
@@ -104,7 +104,7 @@ Most of the apps and actions in the marketplace have individual steps that you n
 6. Complete the order and begin the installation. 
 6. Chose which repositories the app will have access to.
 
-To demonstrate how to install one app or action from the marketplace, we will use the app [Slack + GitHub](https://github.com/marketplace/slack-github). 
+To demonstrate how to install one app or action from the GitHub Marketplace, we will use the app [Slack + GitHub](https://github.com/marketplace/slack-github). 
 
 
 <a name="yaml"> </a>
@@ -152,7 +152,7 @@ XML stands for "Extensible Markup Language" and is a markup language for encodin
 XML provides access information and makes it easier for applications to use, store, display and transmit data. 
 [[10]](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzamj/rzamjintrouses.htm). When it comes to Github Apps and Actions, 
 XML files are often used for building a POM (Project Object Model) unit which is needed if you want to build a Maven project. 
-[[11]](https://www.tutorialspoint.com/maven/maven_pom.htm) One example of an application that sometimes needs an XML file to create a POM unit is the application, [Travis](https://github.com/marketplace/travis-ci). 
+[[11]](https://www.tutorialspoint.com/maven/maven_pom.htm) One example of an application that sometimes needs an XML file to create a POM unit is the application [Travis](https://github.com/marketplace/travis-ci). 
 
 
 <a name="tutor"> </a>
@@ -270,7 +270,7 @@ First of all, you need to log into [Discord](https://discordapp.com) and go to t
 
 ![](/images/discord_settings.png) 
 
-In the settings of the server, you will find an option named Webhooks. In the Webhooks, you can create a webhook that you can use in GitHub for the action Discord Message Notify. 
+In the settings of the server, you will find an option named Webhooks. In Webhooks, you can create a webhook that you can use in GitHub for the action Discord Message Notify. 
 
 ![](/images/create_discord_webhook.png) 
 
@@ -278,7 +278,7 @@ You can decide what the webhook's name should be, which discord channel it shoul
 
 ![](/images/edit_webhook.png) 
 
-After you have decided the name of the webhook etc. you can go back to your repository. Now we are going to create the YAML file that contains the set up for the action Discord Message Notify. In the action's [documentation](https://github.com/marketplace/actions/discord-message-notify) you will see some examples of different setups that you can use for your repository, and what is the purpose of the different input variables in the setup. 
+After you have decided the name of the webhook etc. you can go back to your repository. Now we are going to create the YAML file that contains the setup for the action Discord Message Notify. In the action's [documentation](https://github.com/marketplace/actions/discord-message-notify) you will see some examples of different setups that you can use for your repository, and what is the purpose of the different input variables in the setup. 
 
 First of all, if you don't have the folders `.github` and `workflows` you can create them at the same time as the YAML file by naming the file `.github/workflows/discord.yaml`.
 
@@ -307,7 +307,7 @@ jobs:
 
 ```
 
-After you have created the YAML file, you will need to add your WEBHOOK_ID and WEBHOOK_TOKEN to the Secrets of your repository. Go back to Discord and the settings of your webhook, and copy the webhook's URL. This URL is unique for your webhook, and it contains an ID and a TOKEN that we need to use to give access to the action. Otherwise, the action will not be able to create messages in our channel.
+After you have created the YAML file, you will need to add your WEBHOOK_ID and WEBHOOK_TOKEN to the Secrets of your repository. Go back to Discord and the settings of your webhook, and copy the webhook's URL. This URL is unique for your webhook, and it contains an id and a token that we need to use to give access to the action. Otherwise, the action will not be able to create messages in our channel.
 
 To clarify which part of the Discord webhook is used for the WEBHOOK_ID and the WEBHOOK_TOKEN see the general example below:
 
@@ -329,11 +329,11 @@ For this tutorial, we have also created a screencast to demonstrate how to insta
 
 ### Uninstall a Github App or Action
 
-During the making of this tutorial, we have tried to install and uninstall different types of GitHub apps and actions. There are mainly two different approaches to make to uninstall an app or action from the GitHub marketplace. Most of the time, the GitHub apps or actions require at least one of them. However, they might have individual steps that you need to to do be able to uninstall the app or action properly. In this tutorial, we will only give you an overview of these two types of approaches. 
+During the making of this tutorial, we have tried to install and uninstall different types of GitHub apps and actions. There are mainly two different approaches to make to uninstall an app or action from the GitHub Marketplace. Most of the time, the GitHub apps or actions require at least one of them. However, they might have individual steps that you need to to do be able to uninstall the app or action properly. In this tutorial, we will only give you an overview of these two types of approaches. 
 
 ##### Configure Integrations
 
-The first approach is mostly used for those apps that you needed to set up a plan for when you installed it from the GitHub marketplace. To demonstrate this approach, we will uninstall the app [Imgbot](https://github.com/marketplace/imgbot) that we have installed for this repository earlier. 
+The first approach is mostly used for those apps that you needed to set up a plan for when you installed it from the GitHub Marketplace. To demonstrate this approach, we will uninstall the app [Imgbot](https://github.com/marketplace/imgbot) that we have installed for this repository earlier. 
 
 In the settings of your repository, you will find an option called Integrations. 
 
@@ -356,7 +356,7 @@ If you click on the button Uninstall, an alert message occurs like the one below
 
 The second approach is to remove everything you created or added to be able to install the GitHub app or action. One typical thing you need to remove to uninstall an app or action is the YAML file with the configuration. For instance, if we would like to remove the [Markdown link check](https://github.com/marketplace/actions/markdown-link-check) that we installed in an earlier tutorial, we only need to remove the YAML file named ``action.yml`` located in the workflow folder.  
 
-If the app or action uses webhooks, you might need to remove the tokens and ID:s that you have added to the secrets. You might also need to remove the webhook from the repository's settings. 
+If the app or action uses webhooks, you might need to remove the tokens and id:s that you have added to your GitHub Secrets. You might also need to remove the webhook from the repository's settings. 
 
 
 <a name="conc"> </a>
